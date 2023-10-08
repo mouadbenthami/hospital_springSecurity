@@ -39,7 +39,7 @@ public class PatientController {
     }
     @GetMapping("/formPatient")
     public String formPatient(Model model ){
-        model.addAttribute("patient",new Patient());
+       model.addAttribute("patient",new Patient());
         return "formPatient";
     }
     @PostMapping("/savePatient")
